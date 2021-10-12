@@ -1,0 +1,19 @@
+{
+  "name": "find-bandwidth-hog",
+  "version": "1.0.0",
+  "description": "Simple text access log analysis, designed to provide some clear guidance on what to focus on",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jj101k/find-bandwidth-hog.git"
+  },
+  "author": "Jim Driscoll",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jj101k/find-bandwidth-hog/issues"
+  },
+  "homepage": "https://github.com/jj101k/find-bandwidth-hog#readme"
+}
