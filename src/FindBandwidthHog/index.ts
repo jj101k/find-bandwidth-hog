@@ -1,1 +1,1 @@
-export * from "./Analyser"
+export * from "./FileAnalyser"

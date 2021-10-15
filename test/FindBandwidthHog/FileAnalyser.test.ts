@@ -1,10 +1,10 @@
 import assert from "assert"
 import {describe, it} from "mocha"
-import { Analyser } from "../../index"
+import { FileAnalyser } from "../../index"
 
-describe("Analyser tests", () => {
+describe("File analyser tests", () => {
     it("Can analyse an empty case without failing", async () => {
-        const analyser = new Analyser()
+        const analyser = new FileAnalyser()
         assert.doesNotThrow(() => analyser.analyse([]))
     })
 })
