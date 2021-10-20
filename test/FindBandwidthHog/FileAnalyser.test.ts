@@ -5,6 +5,7 @@ import { FileAnalyser } from "../../index"
 describe("File analyser tests", () => {
     it("Can analyse an empty case without failing", async () => {
         const analyser = new FileAnalyser()
-        assert.doesNotThrow(() => analyser.analyse([]))
+        const results = await analyser.analyse([])
+        assert.equal(results.size, 0, "Results are empty")
     })
 })

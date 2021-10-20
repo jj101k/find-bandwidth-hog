@@ -1,9 +1,13 @@
 export class FileAnalyser {
-    async analyse(lines: AsyncGenerator<string> | string[]) {
-        const results: any[] = []
+    /**
+     *
+     * @param lines
+     * @returns
+     */
+    async analyse(lines: AsyncGenerator<string> | string[]): Promise<Map<string, number>> {
         for await (const line of lines) {
 
         }
-        return results
+        return new Map()
     }
 }
