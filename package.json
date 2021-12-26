@@ -4,9 +4,12 @@
   "description": "Simple text access log analysis, designed to provide some clear guidance on what to focus on",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "prepare": "rm -rf dist; tsc",
+    "build": "tsc; chmod a+x dist/bin.js",
+    "prepare": "rm -rf dist; tsc; chmod a+x dist/bin.js",
     "test": "mocha --require ts-node/register test/**/*.test.ts"
+  },
+  "bin": {
+    "find-bandwidth-hog": "dist/bin.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,9 @@
     "url": "https://github.com/jj101k/find-bandwidth-hog/issues"
   },
   "homepage": "https://github.com/jj101k/find-bandwidth-hog#readme",
+  "dependencies": {
+    "binary-search-log": "^1.0.0"
+  },
   "devDependencies": {
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.10.3",
